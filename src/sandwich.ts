@@ -1,3 +1,3 @@
-export function sandwich(x: number): number {
+export function sandwich(x: number, y: number, z: number): number {
     return 0
 }

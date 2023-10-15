@@ -1,3 +1,3 @@
-export function badparen(x: number): number {
+export function badparen(text: string): number {
     return 0
 }

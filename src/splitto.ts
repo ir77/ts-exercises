@@ -1,3 +1,3 @@
-export function splitto(x: number): number {
-    return 0
+export function splitto(text: string): string[] {
+    return []
 }

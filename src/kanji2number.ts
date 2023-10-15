@@ -1,3 +1,3 @@
-export function kanji2number(x: number): number {
+export function kanji2number(kanji: string): number {
     return 0
 }

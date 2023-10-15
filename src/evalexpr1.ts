@@ -1,3 +1,3 @@
-export function evalexpr1(x: number): number {
+export function evalexpr1(expr: string): number {
     return 0
 }

@@ -2,8 +2,11 @@ import { kanji2number } from "./kanji2number"
 
 describe('kanji2number', () => {
 
-    test('', () => {
-        expect(kanji2number(0)).toBe(0)
+    test('漢数字を整数に変換', () => {
+        expect(kanji2number('三')).toBe(3)
+        expect(kanji2number('二十七')).toBe(27)
+        expect(kanji2number('千百一')).toBe(1101)
+        expect(kanji2number('五十六億七千万')).toBe(5670000000)
     })
 
 })
