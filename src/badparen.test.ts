@@ -13,7 +13,7 @@ describe('badparen', () => {
     })
 
     test('悪いカッコの位置を返す (閉じ括弧が余計な場合)', () => {
-        expect(badparen('4567)')).toBe(3)
+        expect(badparen('4567)')).toBe(4)
         expect(badparen(')))')).toBe(0)
     })
 
