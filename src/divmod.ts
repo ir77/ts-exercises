@@ -4,5 +4,8 @@ export type DivMod = {
 }
 
 export function divmod(x: number, y: number): DivMod {
-    return { div: x / y, mod: x % y }
+    return { 
+        div: Math.trunc(x / y), 
+        mod: x % y
+    }
 }
