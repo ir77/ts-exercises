@@ -1,3 +1,4 @@
 export function split2(text: string): string[] {
-    return []
+    return text.split(/[\s,]+/).
+        filter(s => s.length > 0);
 }
