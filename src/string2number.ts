@@ -1,3 +1,3 @@
 export function string2number(x: string): number {
-    return 0
+    return parseInt(x, 10);
 }
