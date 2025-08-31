@@ -8,5 +8,4 @@ describe('number2kanji', () => {
         expect(number2kanji(1101)).toBe('千百一')
         expect(number2kanji(5670000000)).toBe('五十六億七千万')
     })
-
 })
