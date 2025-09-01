@@ -7,7 +7,7 @@ describe('countdays', () => {
         expect(countdays(1,2)).toBe(1)
         expect(countdays(2,1)).toBe(31)
         expect(countdays(3,1)).toBe(59)
-        expect(countdays(12,30)).toBe(364)
+        expect(countdays(12,31)).toBe(364)
     })
-
+    
 })
