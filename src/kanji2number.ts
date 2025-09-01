@@ -1,13 +1,9 @@
 export function kanji2number(kanji: string): number {
-    // 二十七 -> 27
-    // 千百一 -> 1101
-    // 五十六億七千万 -> 5670000000
-    // 一桁目から順番に処理していく
-
     let total = 0
     let sectionTotal = 0
     let numberBuffer = 0
 
+    // 文字を前から順に処理
     for (let i = 0; i < kanji.length; i++) {
         const char = kanji[i]
 
