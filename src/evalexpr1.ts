@@ -13,9 +13,7 @@ function convertToPostfix(tokens: string[]): (string | number)[] {
     const operatorStack: string[] = [];
 
     for (const token of tokens) {
-        if (!isNaN(parseFloat(token))) {
-            outputQueue.push(parseFloat(token));
-        } else {
+        if (isNaN(parseFloat(token))) {
             // スタックの頂上にある演算子が、現在のものより優先度が高いか等しい限りループ
             while (operatorStack.length > 0) {
                 const topOfStack = operatorStack[operatorStack.length - 1];
@@ -27,6 +25,8 @@ function convertToPostfix(tokens: string[]): (string | number)[] {
                 outputQueue.push(operatorStack.pop()!);
             }
             operatorStack.push(token);
+        } else {
+            outputQueue.push(parseFloat(token));
         }
     }
 
@@ -49,7 +49,6 @@ function evaluatePostfix(postfixQueue: (string | number)[]): number {
     }
     return calculationStack[0];
 }
-
 
 export function evalexpr1(expression: string): number {
     // ステップ1: 字句解析 (Tokenization)

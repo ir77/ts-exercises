@@ -10,7 +10,7 @@ describe('evalexpr1', () => {
     test('式の評価 (足し算と掛け算)', () => {
         expect(evalexpr1('2*3')).toBe(6)
         expect(evalexpr1('1+2*3')).toBe(7)
-        expect(evalexpr1('3-2*4-5*2')).toBe(-2)
+        expect(evalexpr1('3-2*4-5*2')).toBe(-15)
     })
 
 })
